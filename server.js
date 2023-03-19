@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('./public'));
 
-// routes
+// html routes
 app.get('/', (req , res) => {
     res.sendFile(path.join(__dirname , './public/index.html'))
 })
